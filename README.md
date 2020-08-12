@@ -671,6 +671,7 @@ plt.savefig('Figures/df_hist.png', dpi=300, bbox_inches='tight');
 ### Joint plots
 Looking at joint plots to get an idea of how the variables relate to sale price. 
 
+![png](Figures/joint_example.png)
 
 ### Heatmap
 Next, we look at a heat map to help weed out any variable that could cause multicorrelarity in the model.
@@ -960,7 +961,7 @@ ax.set_ylim(bottom + 0.5, top - 0.5) ;
 ```
 
 
-![png](student-Copy1_files/student-Copy1_87_0.png)
+![png](Figures/heatmap_1.png)
 
 
 ### Removing Outliers
@@ -979,7 +980,7 @@ sns.boxplot(x=df['price'])
 
 
 
-![png](student-Copy1_files/student-Copy1_89_1.png)
+![png](Figures/boxplot_outliers.png)
 
 
 
@@ -1017,7 +1018,7 @@ sns.boxplot(x=df['price'])
 
 
 
-![png](student-Copy1_files/student-Copy1_94_2.png)
+![png](Figures/boxplot_noliers.png.png)
 
 
 
@@ -1224,7 +1225,7 @@ ax.set_ylim(bottom + 0.5, top - 0.5) ;
 ```
 
 
-![png](student-Copy1_files/student-Copy1_108_0.png)
+![png](Figures/heatmap_2.png)
 
 It looks like we can drop sqft_above and condition_4
 
@@ -1406,10 +1407,10 @@ print(f'Training Data R-Squared = {round(r2_test,3)}')
 ### Bedrooms and Bathrooms
 
 
-![png](student-Copy1_files/student-Copy1_121_0.png)
+![png]('Figures/bedrooms_subplots.png')
 
 
-![png](student-Copy1_files/student-Copy1_122_0.png)
+![png]('Figures/bathrooms_subplots.png')
 
 
 - In general, number of bathrooms and bedrooms relate to price of house.
@@ -1417,14 +1418,14 @@ print(f'Training Data R-Squared = {round(r2_test,3)}')
 
 ### Living Space
 
-![png](student-Copy1_files/student-Copy1_127_0.png)
+![png](Figures/sqft_living_subplots.png)
 
 - A larger living space can increase the sale price
 
 ### Grade
 
 
-![png](student-Copy1_files/student-Copy1_125_0.png)
+![png](Figures/grade_subplots.png)
 
 
 - The higher the grade, the high the sales price.
@@ -1433,14 +1434,14 @@ print(f'Training Data R-Squared = {round(r2_test,3)}')
 ### Subregion Boxplot
 
 
-![png](student-Copy1_files/student-Copy1_136_0.png)
+![png](Figures/subregion_boxwhisker.png)
 
 
 - The old addage "Location, Location, Location" is supported with our finding with East Urban and Vashon Island generally selling for more. 
 
 ### Things not important
 
-![png](student-Copy1_files/student-Copy1_138_0.png)
+![png](Figures/yr_built.png)
 
 - The age of the house does not seem to be significantly related to price.
 
