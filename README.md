@@ -1018,7 +1018,7 @@ sns.boxplot(x=df['price'])
 
 
 
-![png](Figures/boxplot_noliers.png.png)
+![png](Figures/boxplot_noliers.png)
 
 
 
@@ -1407,10 +1407,10 @@ print(f'Training Data R-Squared = {round(r2_test,3)}')
 ### Bedrooms and Bathrooms
 
 
-![png]('Figures/bedrooms_subplots.png')
+![png](Figures/bedrooms_subplots.png)
 
 
-![png]('Figures/bathrooms_subplots.png')
+![png](Figures/bathrooms_subplots.png)
 
 
 - In general, number of bathrooms and bedrooms relate to price of house.
